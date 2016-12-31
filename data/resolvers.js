@@ -1,29 +1,22 @@
+import {Author, Post} from './connectors';
+
 const resolvers = {
   Query: {
     author(_, args) {
-      return {
-        id: 1,
-        firstName: 'Hey',
-        lastName: 'You'
-      }
+      return Author.find({ where: args });
+      // return { id: 1, firstName: 'Hey', lastName: 'You' }
     },
   },
   Author: {
     posts(author) {
-      return [{
-        id: 111,
-        title: '123',
-        text: 'Good'
-      }];
+      return author.getPosts();
+      // return [{ id: 111, title: '123', text: 'Good' }];
     }
   },
   Post: {
     author(post) {
-      return {
-        id: 1,
-        firstName: 'Hey',
-        lastName: 'You'
-      }
+      return post.getAuthor();
+      // return { id: 1, firstName: 'Hey', lastName: 'You' }
     }
   }
 };

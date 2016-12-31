@@ -3,7 +3,6 @@ import { apolloServer } from 'apollo-server';
 import schema from './data/schema.js';
 import Mocks from './data/mocks';
 import Resolvers from './data/resolvers';
-
 const GRAPHQL_PORT = 8080;
 
 const graphQLServer = express();
