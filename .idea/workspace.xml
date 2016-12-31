@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14def124-b886-44e9-96cd-dadbcb7991bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/connectors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/connectors.js" afterPath="$PROJECT_DIR$/data/connectors.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/resolvers.js" afterPath="$PROJECT_DIR$/data/resolvers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/schema.js" afterPath="$PROJECT_DIR$/data/schema.js" />
     </list>
     <ignored path="apollo-tutorial-kit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +31,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-357">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1483179153000" expanded="true" signature="161:302" ph="{&quot;start&quot;: &quot;nodemon ./server.js --exec babel-node&quot;...}" />
+                <marker date="1483179153000" expanded="true" signature="320:415" ph="{&quot;type&quot;: &quot;git&quot;...}" />
+                <marker date="1483179153000" expanded="true" signature="431:526" ph="[...]" />
+                <marker date="1483179153000" expanded="true" signature="607:682" ph="{&quot;url&quot;: &quot;https://github.com/apollostack/apollo-starter-kit/issues&quot;...}" />
+                <marker date="1483179153000" expanded="true" signature="776:937" ph="{&quot;apollo-server&quot;: &quot;^0.1.2&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,21 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resolvers.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="resolvers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/resolvers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="300">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connectors.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="connectors.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/connectors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="120">
+              <caret line="8" column="3" selection-start-line="7" selection-start-column="26" selection-end-line="8" selection-end-column="3" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -75,8 +79,8 @@
       <file leaf-file-name="schema.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -98,7 +102,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="step3-Resolvers" />
+        <entry key="$PROJECT_DIR$" value="step4-SQLite" />
       </map>
     </option>
   </component>
@@ -107,11 +111,11 @@
       <list>
         <option value="$PROJECT_DIR$/data/mocks.js" />
         <option value="$PROJECT_DIR$/data/schema.graphql" />
-        <option value="$PROJECT_DIR$/data/schema.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/data/resolvers.js" />
+        <option value="$PROJECT_DIR$/data/schema.js" />
         <option value="$PROJECT_DIR$/data/connectors.js" />
+        <option value="$PROJECT_DIR$/data/resolvers.js" />
       </list>
     </option>
   </component>
@@ -252,7 +256,7 @@
       <workItem from="1483170857845" duration="1111000" />
       <workItem from="1483172028588" duration="3375000" />
       <workItem from="1483176102785" duration="185000" />
-      <workItem from="1483177522236" duration="2333000" />
+      <workItem from="1483177522236" duration="3849000" />
     </task>
     <task id="LOCAL-00001" summary="step3 Resolvers">
       <created>1483178304954</created>
@@ -261,11 +265,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483178304954</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="step4 SQLite">
+      <created>1483179962750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1483179962750</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7004000" />
+    <option name="totallyTimeSpent" value="8520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1278" height="1080" extended-state="0" />
@@ -305,7 +316,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="step3 Resolvers" />
-    <option name="LAST_COMMIT_MESSAGE" value="step3 Resolvers" />
+    <MESSAGE value="step4 SQLite" />
+    <option name="LAST_COMMIT_MESSAGE" value="step4 SQLite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -368,7 +380,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1483179153000" expanded="true" signature="161:302" ph="{&quot;start&quot;: &quot;nodemon ./server.js --exec babel-node&quot;...}" />
+            <marker date="1483179153000" expanded="true" signature="320:415" ph="{&quot;type&quot;: &quot;git&quot;...}" />
+            <marker date="1483179153000" expanded="true" signature="431:526" ph="[...]" />
+            <marker date="1483179153000" expanded="true" signature="607:682" ph="{&quot;url&quot;: &quot;https://github.com/apollostack/apollo-starter-kit/issues&quot;...}" />
+            <marker date="1483179153000" expanded="true" signature="776:937" ph="{&quot;apollo-server&quot;: &quot;^0.1.2&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -406,19 +424,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/schema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-357">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1483179153000" expanded="true" signature="161:302" ph="{&quot;start&quot;: &quot;nodemon ./server.js --exec babel-node&quot;...}" />
+            <marker date="1483179153000" expanded="true" signature="320:415" ph="{&quot;type&quot;: &quot;git&quot;...}" />
+            <marker date="1483179153000" expanded="true" signature="431:526" ph="[...]" />
+            <marker date="1483179153000" expanded="true" signature="607:682" ph="{&quot;url&quot;: &quot;https://github.com/apollostack/apollo-starter-kit/issues&quot;...}" />
+            <marker date="1483179153000" expanded="true" signature="776:937" ph="{&quot;apollo-server&quot;: &quot;^0.1.2&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -432,21 +448,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/resolvers.js">
+    <entry file="file://$PROJECT_DIR$/data/schema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/connectors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="120">
+          <caret line="8" column="3" selection-start-line="7" selection-start-column="26" selection-end-line="8" selection-end-column="3" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/resolvers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
