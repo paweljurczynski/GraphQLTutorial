@@ -2,6 +2,7 @@ import Sequelize from 'sequelize';
 import casual from 'casual';
 import _ from 'lodash';
 import Mongoose from 'mongoose';
+import rp from 'request-promise';
 
 const db = new Sequelize('blog', null, null, {
   dialect: 'sqlite',
@@ -62,5 +63,15 @@ db.sync({ force: true }).then(() => {
 const Author = db.models.author;
 const Post = db.models.post;
 
+const FortuneCookie = {
+  getOne() {
+    return rp('http://fortunecookieapi.herokuapp.com/v1/cookie')
+       .then((res) => {
+         const [cookie] = JSON.parse(res);
 
-export { Author, Post, View };
+         return cookie.fortune.message;
+       });
+  }
+};
+
+export { Author, Post, View, FortuneCookie };
