@@ -30,6 +30,8 @@
     "casual": "^1.5.8",
     "express": "4.13.4",
     "lodash": "^4.17.3",
+    "mongoose": "^4.7.5",
+    "request-promise": "^4.1.1",
     "sequelize": "^3.28.0",
     "sqlite": "^2.2.4"
   },
